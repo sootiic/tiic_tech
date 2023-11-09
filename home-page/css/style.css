@@ -1,0 +1,548 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ .header {
+     display: flex;
+     position: relative;
+     gap: 300px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+ 
+ .logo1 {
+     width: 350px;
+     margin-left: 30px;
+     margin-top: 30px;
+ }
+ 
+ .add {
+     display: block;
+ }
+ 
+ .link {
+     display: flex;
+     background-color: lightgray;
+     padding-left: 20px;
+     padding-bottom: 10px;
+     border-radius: 50px 0 0 50px;
+ }
+ 
+ .loc {
+     width: 35px;
+     height: 35px;
+     margin-top: 20px;
+ }
+ 
+ .local {
+     margin-left: 20px;
+     margin-top: 30px;
+     font-weight: bold;
+ }
+ 
+ .icon {
+     width: 20px;
+     height: 20px;
+     margin-left: 20px;
+     margin-top: 30px;
+     border-radius: 60px;
+ }
+ 
+ .hamburger span {
+     width: 20px;
+     height: 3px;
+     background-color: #333;
+     display: block;
+     margin-top: 4px;
+ }
+ 
+ .nav-list {
+     margin-right: 150px;
+     margin-top: 20px;
+     display: flex;
+     gap: 30px;
+ }
+ 
+ .nav-list a {
+     color: blueviolet;
+     font-weight: bold;
+     font-size: 18px;
+ }
+ 
+ .nav-list a:hover {
+     border-bottom: 2px solid;
+     color: rgb(0, 183, 255);
+     border-color: rgb(0, 183, 255);
+ }
+ 
+ .hamburger {
+     display: none;
+     margin-top: 20px;
+     margin-right:50px;
+ }
+ 
+ .background {
+     background-image: url(../images/background.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: block;
+     text-align: center;
+     width: 100%;
+     height: 700px;
+ }
+ 
+ h1 {
+     color: white;
+     font-size: 40px;
+     padding-top: 250px;
+     font-size: 50px;
+ }
+ 
+ h4 {
+     color: rgb(231, 173, 248);
+     font-size: 20px;
+ }
+ 
+ .services {
+     text-align: center;
+ }
+ 
+ .our {
+     font-size: 20px;
+     margin-top: 30px;
+     color: blueviolet;
+     font-weight: bold;
+     margin-bottom: 30px;
+ }
+ 
+ .about {
+     gap: 100px;
+     margin: 40px;
+ }
+ 
+ .brief {
+     font-size: 40px;
+     margin-top: 0px;
+     padding-top: 0px;
+ }
+ 
+ .detail {
+     display: flex;
+     justify-content: center;
+     justify-content: space-evenly;
+     margin-bottom: 50px;
+ }
+ 
+ h3 {
+     color: blue;
+ }
+ 
+ .sicon {
+     width: 90px;
+ }
+ 
+ .sd {
+     background-color: lightgrey;
+     padding: 20px;
+     border-radius: 10px;
+     height: 250px;
+ }
+ 
+ .blog {
+     display: flex;
+     justify-content: center;
+     justify-content: space-evenly;
+     margin-bottom: 50px;
+ }
+ 
+ .ds {
+     background-color: white;
+     box-shadow: 10px 10px 5px #aaaaaa;
+     border-radius: 10px;
+     width: 300px;
+     height: 450px;
+ }
+ 
+ .ds .sicon {
+     width: 300px;
+     height: 200px;
+     border-radius: 10px 10px 0 0;
+ }
+ 
+ .by p {
+     font-weight: bold;
+     padding-right: 10px;
+     border-right: 2px solid lightgray;
+ }
+ 
+ .by-img {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     padding: 10px;
+ }
+ 
+ .note {
+     padding: 10px;
+ }
+ 
+ .ceo {
+     width: 500px;
+     margin: 30px;
+     margin-left: 90px;
+ }
+ 
+ .team_page {
+     background-color: lightgrey;
+     background-size: cover;
+     padding: 30px;
+ }
+ 
+ .team {
+     gap: 40px;
+     justify-content: center;
+     margin-top: 50px;
+ }
+ 
+ .tb {
+     width: 300px;
+     height: 300px;
+     border-radius: 900px;
+ }
+ 
+ .bt {
+     text-align: center;
+     font-weight: bold;
+     font-size: 16px;
+     color: blue;
+ }
+ 
+ .bt2 {
+     text-align: center;
+     font-weight: 300;
+     font-size: 16px;
+ }
+ 
+ .mySlides {
+     display:none;
+     width: 600px;
+     height: 450px;
+     margin-top: 130px;
+ }
+ 
+ .progress {
+     justify-content: center;
+     gap: 200px;
+     align-items: center;
+     padding: 40px;
+ }
+ 
+ .p1 {
+     text-align: center;
+     font-weight: bold;
+     color: blueviolet;
+ }
+ 
+ .bbody {
+     display: block;
+     text-align: center;
+     background-image: url(../images/world2.png);
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 50px;
+     margin: 20px 0 20px 0;
+ }
+ 
+ .body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .slide-container {
+     max-width: 2000px;
+     width: 100%;
+     padding: 40px 0;
+     overflow: hidden;
+ }
+ 
+ .slide-content {
+     padding: 40px 20px;
+     margin: 0px 40px;
+     overflow: hidden;
+ }
+ 
+ .card {
+     width: 320px ;
+     border-radius: 25px;
+     background-color: #fff;
+ }
+ 
+ .image-content, .card-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 10px 14px;
+ }
+ 
+ .image-content {
+     position: relative ;
+     row-gap: 5px;
+     padding: 10px 14px;
+ }
+ 
+ .overlay {
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     background-color: #4070f4;
+     border-radius: 25px 25px 0px 25px;
+ }
+ 
+ .overlay::before, .overlay::after {
+     content: '';
+     position: absolute;
+     right: 0;
+     bottom: -40px;
+     height: 40px;
+     width: 40px;
+     background-color: #4070f4;
+ }
+ 
+ .overlay::after {
+     border-radius: 0 25px 0 0;
+     background-color: #fff;
+ }
+ 
+ .card-image {
+     position: relative;
+     height: 150px;
+     width: 150px;
+     border-radius: 50%;
+     background-color: #fff;
+     padding: 3px;
+ }
+ 
+ .card-image .card-img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 50%; 
+     border: 3px solid #4070f4;
+ }
+ 
+ .name {
+     font-size: 18px;
+     font-weight: 500;
+     color: #333;
+ }
+ 
+ .description {
+     font-size: 14px;
+     color: #707070;
+     text-align: center;
+ }
+ 
+ .button {
+     border: none;
+     font-size: 16px;
+     color: #fff;
+     padding: 8px 16px;
+     background-color: #4070f4;
+     border-radius: 6px;
+     margin: 14px;
+     height: 40px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ 
+ .button:hover {
+     background: #265DF2;
+ }
+ 
+ .swiper-navBtn {
+     color: white;
+ }
+ 
+ footer {
+     background-color: rgb(1, 1, 17);
+     background-size: cover;
+ }
+ 
+ .foot {
+     display: flex;
+     gap: 70px;
+ }
+ 
+ .d1, .about, .team, .progress, .by {
+     display: flex;
+ }
+ 
+ .com, .tlink {
+     display: block;
+ }
+ 
+ .icon1 {
+     width: 32px;
+     height: 32px;
+     border-radius: 60px;
+     margin-top: 40px;
+     margin-left: 40px;
+ }
+ 
+ h2 {
+     color: white;
+ }
+ 
+ .tlink a {
+     font-weight: bold;
+     font-size: 14px;
+     color: white;
+ }
+ 
+ h2 {
+     color: blueviolet;
+ }
+ 
+ .icon2 {
+     width: 25px;
+     height: 25px;
+     border-radius: 60px;
+     margin-top: 10px;
+ }
+ 
+ .d1 p{
+     color: white;
+     font-weight: bold;
+     font-size: 14px;
+     margin-top: 10px;
+     margin-left: 20px;
+ }
+ 
+ .opay {
+     color: white;
+     font-weight: bold;
+     font-size: 14px;
+ }
+ 
+ input, textarea {
+     margin-top: 10px;
+     width: 80%;
+     margin-bottom: 10px;
+ }
+ 
+ input {
+     height: 30px;
+ }
+ 
+ textarea {
+     width: 300px;
+     margin-right: 20px;
+ }
+ 
+ .b2 {
+     background-color: blueviolet;
+     color: white;
+     font-weight: bold;
+     border-radius: 5px;
+     border: none;
+     width: 90px;
+     height: 30px;
+ }
+ 
+ .sootiic-tech {
+     color: white;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ @media (max-width: 768px) {
+     .nav-list {
+         display: none;
+     }
+ 
+     .hamburger, .team, .detail {
+         display: block;
+     }
+
+     .logo1 {
+        margin-left: 18px;
+    }
+
+     .header {
+        gap: 10px;
+     }
+
+     .hamburger {
+        margin-top: 70px;
+     }
+
+     .link {
+        display: none;
+     }
+
+     .detail, .sd {
+        margin-bottom: 50px;
+        width: 350px;
+        margin-left: 10px;
+     }
+
+     .ceo {
+        width: 270px;
+        margin-top: 70px;
+     }
+
+     .team {
+        text-align: center;
+     }
+
+     .about {
+        display: block;
+     }
+
+     .mySlides {
+        width: 350px;
+        margin-right: 10px;
+     }
+
+     .progress {
+        display: none;
+     }
+
+     hr {
+        display: none;
+     }
+
+     .blog {
+        display: block;
+        margin-left: 70px;
+     }
+
+     .ds {
+        margin-bottom: 20px;
+        height: 450px;
+     }
+
+     .ds .sicon {
+        width: 300px;
+     }
+
+     .foot {
+        display: block;
+        text-align: center;
+     }
+
+     .d1 {
+        margin-left: 90px;
+     }
+ }
