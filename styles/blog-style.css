@@ -55,12 +55,18 @@ body {
      border-radius: 60px;
  }
  
- .hamburger span {
-     width: 20px;
-     height: 3px;
+ .hamburger {
+    display: none;
+ }
+ 
+ .bar {
      background-color: #333;
      display: block;
-     margin-top: 4px;
+     margin: 5px auto;
+     width: 25px;
+     height: 3px;
+     -webkit-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
  }
  
  .nav-list {
@@ -68,6 +74,7 @@ body {
      margin-top: 20px;
      display: flex;
      gap: 30px;
+     transition: 0.7s ease;
  }
  
  .nav-list a {
@@ -311,11 +318,39 @@ textarea {
 
 @media (max-width: 768px) {
     .nav-list {
-        display: none;
+        position: fixed;
+        left: 100%;
+        top: 150px;
+        gap: 0px;
+        flex-direction: column;
+        background-color: lightgray;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-list a {
+        margin: 15px;
+    }
+
+    .nav-list.active {
+        left: 0px;
     }
 
     .hamburger, .team, .detail {
         display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .logo1 {

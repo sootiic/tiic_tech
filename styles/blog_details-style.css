@@ -55,12 +55,18 @@ body {
      border-radius: 60px;
  }
  
- .hamburger span {
-     width: 20px;
-     height: 3px;
+ .hamburger {
+    display: none;
+ }
+ 
+ .bar {
      background-color: #333;
      display: block;
-     margin-top: 4px;
+     margin: 5px auto;
+     width: 25px;
+     height: 3px;
+     -webkit-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
  }
  
  .nav-list {
@@ -68,6 +74,7 @@ body {
      margin-top: 20px;
      display: flex;
      gap: 30px;
+     transition: 0.7s ease;
  }
  
  .nav-list a {
@@ -89,7 +96,7 @@ body {
  }
  
  .background {
-     background-image: url(./images/background.jpg);
+     background-image: url(../public/blog_details-background.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      display: block;
@@ -114,7 +121,157 @@ body {
  .blog-container {
     display: flex;
     gap: 30px;
+    margin: 30px 90px 30px 50px;
+
  }
+
+ .blog-content, .other, .content {
+    display: block;
+ }
+
+ .hero {
+    font-size: 40px;
+ }
+
+ .hero2 {
+    border-left: 5px solid blueviolet;
+    padding-left: 14px;
+    font-weight: bold;
+    font-size: 30px;
+ }
+
+ .bar2 {
+    width: 350px;
+    height: 50px;
+    border-radius: 8px;
+    border: 2px solid blueviolet;
+ }
+
+ .cate li {
+    list-style-type: none;
+ }
+
+ li {
+    margin-bottom: 10px;
+ }
+
+ li p {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid lightgrey;
+    height: 30px;
+    padding-top: 10px;
+ }
+
+ li a:hover {
+    color: blueviolet;
+ }
+
+ .r-blog, .r-date {
+    display: flex;
+    gap: 30px;
+ }
+
+ .r-blog {
+    background-color: white;
+    margin-bottom: 50px;
+ }
+
+ .r-blog:hover {
+    box-shadow: 10px 10px 5px #aaaaaa;
+ }
+
+ .r-date p {
+    color: blueviolet;
+    padding-right: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-right: 2px solid lightgray;
+ }
+
+ .r-content {
+    display: block;
+ }
+
+ .r-img {
+    padding-top: 10px;
+    width: 100px;
+    height: 90px;
+ }
+
+ .img {
+    width: 800px;
+ }
+
+ .by, .container {
+    display: flex;
+    gap: 30px;
+ }
+
+ .by-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding-top: 10px;
+ }
+
+ .by p {
+    font-size: 20px;
+    font-weight: bold;
+    border-right: 2px solid lightgrey;
+    padding-right: 20px;
+ }
+
+ .comment {
+    font-size: 40px;
+    margin-left: 40px;
+ }
+
+ .com-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 40px;
+ }
+
+ .com-name {
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ .container, .container2 {
+    margin-bottom: 50px;
+    margin-right: 500px;
+ }
+
+ .container2 {
+    margin-left: 100px;
+ }
+
+ .container2 label {
+    font-size: 14px;
+    font-weight: bold;
+ }
+
+ .textarea {
+    width: 600px;
+ }
+
+ .button {
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #265DF2;
+}
 
  footer {
     background-color: rgb(1, 1, 17);
@@ -210,7 +367,23 @@ textarea {
 
 @media (max-width: 768px) {
     .nav-list {
-        display: none;
+        position: fixed;
+        left: 100%;
+        top: 150px;
+        gap: 0px;
+        flex-direction: column;
+        background-color: lightgray;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-list a {
+        margin: 15px;
+    }
+
+    .nav-list.active {
+        left: 0px;
     }
 
     .hamburger, .team, .detail {
@@ -219,6 +392,18 @@ textarea {
 
     .logo1 {
         margin-left: 18px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .header {
@@ -233,20 +418,20 @@ textarea {
        display: none;
     }
 
-    .detail, .sd {
-       margin-bottom: 50px;
-       width: 350px;
-       margin-left: 18px;
+    .blog-container {
+        display: block;
     }
 
-
-    .ds {
-       margin-bottom: 20px;
-       height: 450px;
+    .img {
+        width: 370px;
     }
 
-    .ds .sicon {
-       width: 300px;
+    .container {
+        margin-right: 40px;
+    }
+
+    .name, .email, .textarea {
+        width: 300px;
     }
 
     .foot {
