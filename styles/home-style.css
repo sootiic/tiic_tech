@@ -155,7 +155,8 @@ body {
  }
  
  .sicon {
-     width: 90px;
+     width: 150px;
+     height: 150px;
  }
  
  .sd {
@@ -575,7 +576,7 @@ body {
      }
 
      .ds {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         height: 450px;
      }
 
