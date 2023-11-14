@@ -120,6 +120,11 @@ body {
  .services {
      text-align: center;
  }
+
+ .see-all {
+    display: flex;
+    justify-content: center;
+ }
  
  .our {
      font-size: 20px;
@@ -361,8 +366,8 @@ body {
  
  .name {
      font-size: 18px;
-     font-weight: 500;
-     color: #333;
+     font-weight: bold;
+     color: blue;
  }
  
  .description {
@@ -545,8 +550,9 @@ body {
      }
 
      .ceo {
-        width: 270px;
+        width: 300px;
         margin-top: 70px;
+        margin: auto 30px;
      }
 
      .team {
@@ -566,7 +572,7 @@ body {
         display: none;
      }
 
-     hr {
+     hr, .swiper-button-next {
         display: none;
      }
 

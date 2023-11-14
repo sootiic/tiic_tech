@@ -111,11 +111,22 @@ body {
     padding-top: 300px;
     font-size: 50px;
 }
+
+.link2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
  
  .link2 a {
     color: blue;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
+ }
+
+ .link2 a:hover {
+    color: white;
  }
 
  .button {

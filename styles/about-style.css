@@ -118,11 +118,22 @@ h4 {
     color: white;
     font-size: 20px;
 }
+
+.link2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
  
  .link2 a {
     color: blue;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
+ }
+
+ .link2 a:hover {
+    color: white;
  }
 
  .button {
@@ -227,7 +238,7 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 0 0;
 }
 
 .body {
@@ -312,8 +323,8 @@ h4 {
 
 .name {
     font-size: 18px;
-    font-weight: 500;
-    color: #333;
+    font-weight: bold;
+    color: blue;
 }
 
 .description {
