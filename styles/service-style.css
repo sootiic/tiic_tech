@@ -28,32 +28,34 @@ body {
  }
  
  .link {
-     display: flex;
-     background-color: lightgray;
-     padding-left: 20px;
-     padding-bottom: 10px;
-     border-radius: 50px 0 0 50px;
- }
+    display: flex;
+    background-color: #631191;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-radius: 50px 0 0 50px;
+}
  
- .loc {
-     width: 35px;
-     height: 35px;
-     margin-top: 20px;
- }
+.loc {
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+}
  
- .local {
-     margin-left: 20px;
-     margin-top: 30px;
-     font-weight: bold;
- }
+.local {
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
  
- .icon {
-     width: 20px;
-     height: 20px;
-     margin-left: 20px;
-     margin-top: 30px;
-     border-radius: 60px;
- }
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 60px;
+}
  
  .hamburger {
     display: none;
@@ -78,10 +80,10 @@ body {
  }
  
  .nav-list a {
-     color: blueviolet;
-     font-weight: bold;
-     font-size: 18px;
- }
+    color: #631191;
+    font-weight: bold;
+    font-size: 18px;
+}
  
  .nav-list a:hover {
     border-bottom: 2px solid;
@@ -157,9 +159,9 @@ body {
 }
 
 .our {
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 30px;
-    color: blueviolet;
+    color: #631191;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -191,7 +193,7 @@ h3 {
 
 .sd:hover {
     background-color: red;
-    background-image: linear-gradient(blueviolet, white);
+    background-image: linear-gradient(lightgray, #631191);
     box-shadow: 10px 10px 5px #aaaaaa;
     border: none;
 }
